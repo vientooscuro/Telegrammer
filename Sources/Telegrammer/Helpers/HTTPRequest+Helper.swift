@@ -7,6 +7,9 @@
 
 import Foundation
 import AsyncHTTPClient
+#if canImport(FoundationNetworking)
+import FoundationNetworking
+#endif
 
 extension HTTPClient.Request {
     var description: String {

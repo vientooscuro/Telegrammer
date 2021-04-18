@@ -9,6 +9,9 @@ import Foundation
 import NIO
 import NIOHTTP1
 import AsyncHTTPClient
+#if canImport(FoundationNetworking)
+import FoundationNetworking
+#endif
 
 public class BotClient {
 
